@@ -1,0 +1,39 @@
+.main_nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.main_nav a,
+.main_nav a:active,
+.main_nav a:visited {
+  text-decoration: none;
+  color: black;
+  transition: all .2s;
+}
+
+.main_nav a.active,
+.main_nav a:hover {
+  color: #e2c000 !important;
+}
+
+.link_icon {
+  margin:0 5px;
+}
+.nav_list {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.nav_brandText {
+  font-weight: lighter;
+}
+
+.nav_brandText:hover{
+  color: #e2c000;
+}
