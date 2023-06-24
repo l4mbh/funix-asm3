@@ -38,8 +38,7 @@ function App() {
         },
         {
           path: "checkout",
-          element: <Checkout />,
-          loader: getAuthorization
+          element: <Checkout />
         },
         {
           path: "login",

@@ -75,6 +75,7 @@ export default function CartTable() {
               <tr className={classes.cart_item}>
                 <td>
                   <img
+                    alt="Product cart"
                     className={`${classes.cart_itemImg} img-fluid`}
                     src={items.item.img1}
                   />
@@ -143,8 +144,10 @@ export default function CartTable() {
           <span>Continue shopping</span>
         </Link>
         <div className={classes.cart_footerContentRight}>
-          <span>Proceed to checkout </span>
-          <FontAwesomeIcon icon={faArrowRight} />
+          <Link to="/checkout">
+            <span>Proceed to checkout </span>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </Link>
         </div>
       </div>
     </>

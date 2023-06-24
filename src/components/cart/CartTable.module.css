@@ -76,7 +76,7 @@
   gap: 1rem;
   font-size: 1.2rem;
   margin: 2rem 0;
-  color: gray;
+  color: gray !important;
 }
 
 .cart_footerContentLeft a,
@@ -91,11 +91,17 @@
   padding: 0.5rem;
   cursor: pointer;
   transition: all .2s;
+  color: gray !important;
 }
 
 .cart_footerContentRight:hover {
   background-color: black;
-  color: white;
+  color: white !important;
   border: 1px solid white;
+}
+
+
+.cart_footerContentRight:hover a {
+  color: white !important;
 }
 
