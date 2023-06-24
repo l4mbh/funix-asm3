@@ -1,17 +1,23 @@
-.btn {
+.btn,
+a {
   padding: 10px;
   width: fit-content;
   height: fit-content;
   cursor: pointer;
-  transition: all .2s;
+  transition: all 0.2s;
   text-align: center;
 }
 
-.btn a{
+.btn,
+a {
   text-decoration: none;
 }
 
-.btn.light{
+.btn a {
+  color: white !important;
+}
+
+.btn.light {
   background-color: white;
   color: black;
 }

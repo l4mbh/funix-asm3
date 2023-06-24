@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: space-between;
   position: sticky;
+  z-index: 3;
+  background-color: white;
 }
 
 .main_nav a,
@@ -32,8 +34,31 @@
 
 .nav_brandText {
   font-weight: lighter;
+  text-transform: uppercase;
 }
 
 .nav_brandText:hover{
   color: #e2c000;
 }
+
+/* Cart icon */
+
+.nav_cartIcon {
+  position: relative;
+}
+
+.nav_cartQuant {
+  position: absolute;
+  z-index: 1;
+  background-color: #e2c000;
+  color: black !important;
+  height: fit-content;
+  width: 20px;
+  border-radius: 10px;
+  font-style: normal;
+  font-size: 12px;
+  top: -10px;
+  left: 25px;
+}
+
+

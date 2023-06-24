@@ -5,9 +5,11 @@ import Shop from "./pages/Shop";
 import Detail from "./pages/Detail";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+import Login, {action as LoginAction} from "./pages/Login";
+import Register, {action as SignUpAction} from "./pages/Register";
 import Error from "./pages/Error";
+import Logout, {action as LogoutAction} from "./pages/Logout";
+import { getAuthorization } from "./utils/auth";
 
 function App() {
   const router = createBrowserRouter([
@@ -37,15 +39,24 @@ function App() {
         {
           path: "checkout",
           element: <Checkout />,
+          loader: getAuthorization
         },
         {
           path: "login",
           element: <Login />,
+          action: LoginAction
         },
         {
           path: "register",
           element: <Register />,
+          action: SignUpAction
         },
+        {
+          path: 'logout',
+          element: <Logout/>,
+          action: LogoutAction,
+          loader: getAuthorization
+        }
       ],
     },
   ]);

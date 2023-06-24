@@ -18,7 +18,7 @@ export default function Error() {
       <FontAwesomeIcon icon={faWarning}/>
       Error Code : 
       </span>
-      { error.status || 'Something went wrong !'}
+      {error.status || 'Something went wrong !'}
       </h1>
       <p className="text-center text-danger display-2 text-bold">{error.statusText || error.message || 'Something went wrong, maybe URL not exist !'}</p>
       <p className="text-center">
