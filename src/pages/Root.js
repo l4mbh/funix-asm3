@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import ProductModal from "../components/home/ProductModal";
 import { userActions } from "../store/userSlice";
 import { cartActions } from "../store/cartSlice";
+import Chat from "../components/chat/Chat";
 
 export default function Root() {
   
@@ -30,6 +31,7 @@ export default function Root() {
   return (
     <div>
       <MainNavigation />
+      <Chat />
       {modalShow && <ProductModal modalItem={modalItem} />}
       <Container className="mockContent">
         <Outlet />

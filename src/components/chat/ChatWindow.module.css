@@ -1,0 +1,118 @@
+.chat_windowWrapper {
+  position: absolute;
+  bottom: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 2px;
+  animation-name: shaking;
+  animation-duration: 0.2s;
+}
+
+@keyframes shaking {
+  0% {
+    rotate: -2deg;
+    opacity: 0;
+  }
+  25% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 1deg;
+  }
+  75% {
+    rotate: -1deg;
+  }
+  100% {
+    rotate: 0deg;
+    opacity: 1;
+  }
+}
+
+.chat_chatHeader {
+  font-weight: bold;
+}
+
+.chat_chatWindow {
+  width: 30rem;
+  border-radius: 2px;
+}
+
+.chat_Body {
+  height: 30rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat_sendMsg {
+  align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chat_sendMsg > p {
+  background-color: #8bc2f3;
+  width: fit-content;
+  margin-bottom: 0;
+  padding: 0 0.5rem;
+  color: white;
+}
+
+.chat_sendMsgIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  color: white;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  
+}
+
+.chat_receiveMsg {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.chat_receiveMsg > p {
+  background-color: darkgray;
+  width: fit-content;
+  margin-bottom: 0;
+  padding: 0 0.5rem;
+}
+
+.chat_receiveMsgIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dfee8a;
+  color: #5653ee;
+  height: 3rem;
+  width: 3rem !important;
+  border-radius: 50%;
+}
+
+.chat_chatFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.chat_chatFooterIcon {
+  margin-right: 1rem;
+}
+
+.chat_chatFooterActions {
+  display: flex;
+  gap: 0.5rem;
+  color: gray;
+  cursor: pointer;
+}
+
+.chat_chatFooterActions > :last-child {
+  color: #8bc2f3;
+}
